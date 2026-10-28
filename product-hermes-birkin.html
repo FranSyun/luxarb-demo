@@ -1,84 +1,73 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>【示例】Hermès Birkin 30（Togo · Gold） — LuxArb Demo</title>
-  <meta name="description" content="示例单品比价详情模板。数据虚构，联盟深链占位。" />
+  <title>Sample · Hermès Birkin 30 (Togo · Gold) — LuxArb Demo</title>
+  <meta name="description" content="Sample product comparison detail. Illustrative prices only." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">Lux<span>Arb</span> Demo</a>
-      <nav class="nav" aria-label="主导航">
-        <a href="index.html">首页</a>
-        <a href="compare.html">比价列表</a>
-        <a href="disclaimer.html">免责声明</a>
+      <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.aria">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="compare.html" data-i18n="nav.compare">Compare</a>
+        <a href="disclaimer.html" data-i18n="nav.disclaimer">Disclaimer</a>
       </nav>
     </div>
   </header>
 
   <main>
     <div class="container" style="padding-top:1.5rem">
-      <nav class="breadcrumb" aria-label="面包屑">
-        <a href="index.html">首页</a> /
-        <a href="compare.html">比价列表</a> /
-        <span>【示例】Hermès</span>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" data-i18n="prod.breadcrumb.home">Home</a> /
+        <a href="compare.html" data-i18n="prod.breadcrumb.compare">Compare</a> /
+        <span>Sample · Hermès</span>
       </nav>
 
       <div class="detail-layout">
         <div class="detail-visual">
-          <span class="badge-demo">示例 · 虚构</span>
+          <span class="badge-demo" data-i18n="prod.sample.badge">Sample · Fictional</span>
           <span aria-hidden="true">👜</span>
         </div>
         <div class="detail-info">
           <div class="card-brand">Hermès</div>
-          <h1>Birkin 30（Togo · Gold）</h1>
-          <p class="card-meta">成色：Very Good · 约 2016 年 · 金扣 · 【完全虚构示例】</p>
+          <h1>Birkin 30 (Togo · Gold)</h1>
+          <p class="card-meta" data-i18n="card.meta.hermes.full">Condition: Very Good · ~2016 · Gold hardware · Fictional sample</p>
 
           <div class="alert" style="margin:1rem 0">
-            <strong>示例数据：</strong>本页用于单品详情模板演示，价格与佣金均为占位，非实时保证。
-            成色 / 鉴定 / 运费 / 平台费会影响可套利空间。详见 <a href="disclaimer.html">免责声明</a>。
+            <span data-i18n="prod.alert">Sample data: This page is a product-detail template. Prices are placeholders, not live quotes. Condition, authenticity, shipping, and fees matter. See the</span>
+            <a href="disclaimer.html" data-i18n="alert.compare.link">Disclaimer</a>.
           </div>
 
           <table class="compare-table">
             <thead>
               <tr>
-                <th>项目</th>
-                <th>内容</th>
+                <th data-i18n="prod.table.item">Item</th>
+                <th data-i18n="prod.table.value">Detail</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>A 平台（特价侧）</td>
+                <td data-i18n="prod.row.a">Platform A (lower sample)</td>
                 <td>Fashionphile · <span class="highlight">$12,400</span></td>
               </tr>
               <tr>
-                <td>B 平台（对照侧）</td>
+                <td data-i18n="prod.row.b">Platform B (higher sample)</td>
                 <td>Rebag · $14,800</td>
               </tr>
               <tr>
-                <td>名义价差</td>
+                <td data-i18n="prod.row.spread">List-price difference</td>
                 <td class="highlight">+$2,400</td>
-              </tr>
-              <tr>
-                <td>预估 CPS 佣金 %</td>
-                <td>约 5%（占位 · 待后台核实）</td>
-              </tr>
-              <tr>
-                <td>预估 CPS 金额</td>
-                <td>≈ $620（占位 · 按 A 平台价粗算）</td>
               </tr>
             </tbody>
           </table>
 
-          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1rem">Birkin 真伪与工艺细节极度敏感；高客单联盟审核更严，请确保站点披露与素材合规。</p>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1rem" data-i18n="prod.note.hermes">Birkin authenticity and craftsmanship details are highly sensitive. Always verify through the platform’s authentication process.</p>
 
-          <a class="btn btn-cta" href="#affiliate-pending" style="max-width:320px">去 A 平台看价</a>
-          <p style="margin-top:0.75rem;font-size:0.8rem;color:var(--text-muted)">
-            外链占位：<code>#affiliate-pending</code> — 获批后替换为联盟深链。
-          </p>
+          <a class="btn btn-cta js-platform-cta" href="#" data-platform="Fashionphile" style="max-width:320px" data-i18n="cta.check">Check price</a>
         </div>
       </div>
     </div>
@@ -89,21 +78,22 @@
       <div class="footer-inner">
         <div>
           <div class="footer-brand">LuxArb Demo</div>
-          <p>联盟推广演示站 · 非实时行情</p>
-          <p>联系：<a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
+          <p data-i18n="footer.tagline">Pre-owned luxury price comparison · Sample data</p>
+          <p><span data-i18n="footer.contact">Contact:</span> <a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
         </div>
         <div class="footer-links">
-          <a href="compare.html">比价列表</a>
-          <a href="disclaimer.html">免责声明</a>
-          <a href="AFFILIATE_SIGNUP.md">联盟注册说明</a>
+          <a href="compare.html" data-i18n="footer.compare">Compare</a>
+          <a href="disclaimer.html" data-i18n="footer.disclaimer">Disclaimer</a>
         </div>
       </div>
       <p class="footer-note">
-        本站为联盟推广演示站。示例商品与价格均为虚构。
+        <span data-i18n="footer.note">We may earn a commission when you buy through links on this site. Sample products and prices are fictional and for illustration only — not investment, trading, or purchase advice.</span>
         © <span id="year">2026</span> Frank Syun / LuxArb Demo
       </p>
     </div>
   </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

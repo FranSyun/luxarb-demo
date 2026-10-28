@@ -1,18 +1,41 @@
 /**
- * Luxury CPS Demo Site — minimal JS
- * Affiliate deep links are placeholders (#affiliate-pending).
- * Replace with network deep-link templates after approval.
+ * LuxArb Demo — visitor-facing JS
+ * Platform CTAs use soft "Coming soon" toast (never expose placeholder codes).
  */
 (function () {
   "use strict";
 
-  document.querySelectorAll('a[href="#affiliate-pending"]').forEach(function (a) {
-    a.addEventListener("click", function (e) {
-      e.preventDefault();
-      var msg =
-        "联盟深链尚未接入（占位 #affiliate-pending）。\n" +
-        "请在 Impact / Awin / CJ 等后台生成深链后替换本页 CTA。";
+  function toastMessage() {
+    if (window.LuxI18n && typeof window.LuxI18n.t === "function") {
+      return window.LuxI18n.t("cta.coming");
+    }
+    return "Coming soon — live platform links will appear here.";
+  }
+
+  function showToast(msg) {
+    var el = document.getElementById("toast");
+    if (!el) {
       window.alert(msg);
+      return;
+    }
+    el.textContent = msg;
+    el.hidden = false;
+    el.classList.add("toast-show");
+    clearTimeout(showToast._timer);
+    showToast._timer = setTimeout(function () {
+      el.classList.remove("toast-show");
+      el.hidden = true;
+    }, 3200);
+  }
+
+  document.querySelectorAll("a.js-platform-cta").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var href = a.getAttribute("href") || "";
+      // Soft-gate placeholders only; allow real http(s) links through
+      if (!href || href === "#" || href.indexOf("affiliate-pending") !== -1) {
+        e.preventDefault();
+        showToast(toastMessage());
+      }
     });
   });
 
@@ -20,4 +43,8 @@
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
+
+  document.addEventListener("luxarb:langchange", function () {
+    // Refresh toast copy context if open; no-op otherwise
+  });
 })();

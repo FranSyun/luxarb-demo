@@ -470,3 +470,81 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 0.4rem;
 }
 .page-header p { color: var(--text-muted); }
+
+
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+}
+.lang-switcher-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.lang-switcher select {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.85rem;
+  max-width: 11rem;
+  cursor: pointer;
+}
+.lang-switcher select:focus {
+  outline: 1px solid var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .header-inner { align-items: flex-start; }
+  .lang-switcher { width: 100%; margin-left: 0; justify-content: flex-end; }
+}
+
+/* Soft toast (Coming soon) */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%) translateY(120%);
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 0.85rem 1.2rem;
+  font-size: 0.92rem;
+  max-width: min(92vw, 420px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  z-index: 200;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  pointer-events: none;
+}
+.toast.toast-show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* RTL */
+html[dir="rtl"] body { direction: rtl; }
+html[dir="rtl"] .nav { flex-direction: row-reverse; }
+html[dir="rtl"] .header-inner { flex-direction: row-reverse; }
+html[dir="rtl"] .lang-switcher { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .price-row,
+html[dir="rtl"] .mode-grid,
+html[dir="rtl"] .cards { direction: rtl; }
+html[dir="rtl"] .breadcrumb { direction: rtl; }
+html[dir="rtl"] .prose ul { padding-left: 0; padding-right: 1.25rem; }
+html[dir="rtl"] .footer-inner { direction: rtl; }
+html[dir="rtl"] .spread { flex-direction: row-reverse; }
+html[dir="rtl"] .card-visual .badge-demo,
+html[dir="rtl"] .detail-visual .badge-demo {
+  left: auto;
+  right: 0.75rem;
+}
+
+/* Hide legacy cps-note if any remain */
+.cps-note { display: none; }

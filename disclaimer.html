@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>免责声明 — LuxArb Demo</title>
-  <meta name="description" content="成色、鉴定、运费、平台费会影响可套利空间；示例数据非实时保证。" />
+  <title>Disclaimer — LuxArb Demo</title>
+  <meta name="description" content="Condition, authenticity, shipping, and fees affect real-world value. Sample data is illustrative only." />
+  <meta data-i18n-title="meta.title.disclaimer" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">Lux<span>Arb</span> Demo</a>
-      <nav class="nav" aria-label="主导航">
-        <a href="index.html">首页</a>
-        <a href="compare.html">比价列表</a>
-        <a href="disclaimer.html" class="active">免责声明</a>
+      <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.aria">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="compare.html" data-i18n="nav.compare">Compare</a>
+        <a href="disclaimer.html" class="active" data-i18n="nav.disclaimer">Disclaimer</a>
       </nav>
     </div>
   </header>
@@ -22,45 +23,45 @@
   <main>
     <section class="section">
       <div class="container prose">
-        <h1>免责声明</h1>
-        <p>本站（LuxArb Demo）是面向联盟网络审核与内容发布的<strong>静态演示站</strong>，由 Frank Syun 运营示意。请在使用本站信息前完整阅读以下条款。</p>
+        <h1 data-i18n="disc.h1">Disclaimer</h1>
+        <p data-i18n="disc.intro">LuxArb Demo is a static demonstration site for cross-platform pre-owned luxury price comparison, operated by Frank Syun. Please read the following before using any information on this site.</p>
 
-        <h2>1. 示例数据非实时、非承诺</h2>
-        <p>页面上标注为「示例」的商品名称、成色、价格、价差与预估 CPS 佣金均为<strong>虚构或历史式占位</strong>，用于展示版式与叙事结构。它们：</p>
+        <h2 data-i18n="disc.s1">1. Sample data — not live quotes</h2>
+        <p data-i18n="disc.s1.p">Items labeled as samples (names, condition, prices, and spreads) are fictional or historical placeholders used to demonstrate layout and narrative. They:</p>
         <ul>
-          <li>不代表任一平台的实时挂牌价或库存；</li>
-          <li>不保证可成交、可寄售或可套利；</li>
-          <li>预估佣金比例与金额仅供占位，须以各联盟后台（Impact / Awin / CJ / ShareASale 等）实际条款为准。</li>
+          <li data-i18n="disc.s1.li1">do not represent live list prices or stock on any platform;</li>
+          <li data-i18n="disc.s1.li2">do not guarantee that an item can be bought, sold, or authenticated;</li>
+          <li data-i18n="disc.s1.li3">are illustrative only and may not match current market conditions.</li>
         </ul>
 
-        <h2>2. 成色、鉴定与同款定义</h2>
-        <p>二手奢侈品的「同款」在实务中往往并不等价。以下因素会导致名义价差无法兑现：</p>
+        <h2 data-i18n="disc.s2">2. Condition, authenticity, and “same item”</h2>
+        <p data-i18n="disc.s2.p">In the pre-owned market, two listings are rarely equivalent. Factors that can erase an apparent price gap include:</p>
         <ul>
-          <li><strong>成色分级</strong>差异（Excellent / Very Good / Good 等平台标准不一致）；</li>
-          <li><strong>年份、序列、配件</strong>（尘袋、发票、表盒、保卡）差异；</li>
-          <li><strong>鉴定结论</strong>与平台真伪政策；假货风险完全由买方自负；</li>
-          <li>色差、磨损位置、维修史等未在列表中充分披露的细节。</li>
+          <li data-i18n="disc.s2.li1">Condition grading differences (Excellent / Very Good / Good — standards vary by platform);</li>
+          <li data-i18n="disc.s2.li2">Year, serials, and accessories (dust bag, receipt, watch box, warranty card);</li>
+          <li data-i18n="disc.s2.li3">Authentication outcomes and each platform’s authenticity policy; counterfeit risk is borne by the buyer;</li>
+          <li data-i18n="disc.s2.li4">Color variation, wear location, repair history, and other details not fully disclosed in a short listing.</li>
         </ul>
 
-        <h2>3. 运费、平台费与税费</h2>
-        <p>跨平台「买低卖高」叙事忽略了真实成本。可能侵蚀价差的项目包括但不限于：</p>
+        <h2 data-i18n="disc.s3">3. Shipping, fees, and taxes</h2>
+        <p data-i18n="disc.s3.p">Cross-platform comparisons can overlook real costs. Items that may reduce any apparent savings include:</p>
         <ul>
-          <li>国际/国内运费、保险与关税；</li>
-          <li>寄售或转售平台的佣金、上架费、支付手续费；</li>
-          <li>退货窗口内的物流与重新上架成本；</li>
-          <li>汇率波动与持有期资金占用。</li>
+          <li data-i18n="disc.s3.li1">Domestic or international shipping, insurance, and duties;</li>
+          <li data-i18n="disc.s3.li2">Marketplace commissions, listing fees, and payment processing;</li>
+          <li data-i18n="disc.s3.li3">Return shipping and restocking within return windows;</li>
+          <li data-i18n="disc.s3.li4">Currency swings and the cost of capital while holding an item.</li>
         </ul>
-        <p>因此，<strong>展示价差 ≠ 可套利空间</strong>。本站不鼓励无经验用户进行跨平台投机。</p>
+        <p data-i18n="disc.s3.p2">Therefore, a displayed list-price difference is not the same as money in hand. This site does not encourage inexperienced speculation across platforms.</p>
 
-        <h2>4. 联盟链接与 CPS</h2>
-        <p>所有「去 A 平台看价」按钮当前使用占位链接 <code>#affiliate-pending</code>。待发行商账号获批并生成深链后，将替换为对应网络的跟踪链接。本站可能因用户点击与成交获得 CPS 佣金；这不影响商品标价，但构成推广关系披露。</p>
+        <h2 data-i18n="disc.s4">4. Links and commissions</h2>
+        <p data-i18n="disc.s4.p">“View on platform” / “Check price” buttons may open partner or marketplace pages. We may earn a commission when you buy through links on this site. That does not change the item’s listed price. Some buttons may show “Coming soon” until live product links are connected.</p>
 
-        <h2>5. 非投资 / 非法律建议</h2>
-        <p>本站内容不构成投资建议、财务建议或法律意见。奢侈品二手市场波动大，过去或示例中的价差不预示未来结果。读者应自行研究并遵守所在地法律法规与各平台服务条款。</p>
+        <h2 data-i18n="disc.s5">5. Not financial or legal advice</h2>
+        <p data-i18n="disc.s5.p">Nothing on this site is investment, financial, or legal advice. Pre-owned luxury markets move; past or sample spreads do not predict future results. Readers should do their own research and follow local laws and each platform’s terms.</p>
 
-        <h2>6. 联系方式</h2>
-        <p>联盟合作与演示站相关问询：<a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
-        <p>本站为<strong>联盟推广演示站</strong>，不销售自营库存。</p>
+        <h2 data-i18n="disc.s6">6. Contact</h2>
+        <p><span data-i18n="disc.s6.p">Questions about this demo site:</span> <a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
+        <p data-i18n="disc.s6.p2">LuxArb Demo does not sell inventory from its own stock; it is a comparison and discovery demo.</p>
       </div>
     </section>
   </main>
@@ -70,21 +71,22 @@
       <div class="footer-inner">
         <div>
           <div class="footer-brand">LuxArb Demo</div>
-          <p>联盟推广演示站 · 非实时行情</p>
-          <p>联系：<a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
+          <p data-i18n="footer.tagline">Pre-owned luxury price comparison · Sample data</p>
+          <p><span data-i18n="footer.contact">Contact:</span> <a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
         </div>
         <div class="footer-links">
-          <a href="compare.html">比价列表</a>
-          <a href="disclaimer.html">免责声明</a>
-          <a href="AFFILIATE_SIGNUP.md">联盟注册说明</a>
+          <a href="compare.html" data-i18n="footer.compare">Compare</a>
+          <a href="disclaimer.html" data-i18n="footer.disclaimer">Disclaimer</a>
         </div>
       </div>
       <p class="footer-note">
-        本站为联盟推广演示站。示例商品与价格均为虚构，不构成投资、套利或购买建议。
+        <span data-i18n="footer.note">We may earn a commission when you buy through links on this site. Sample products and prices are fictional and for illustration only — not investment, trading, or purchase advice.</span>
         © <span id="year">2026</span> Frank Syun / LuxArb Demo
       </p>
     </div>
   </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

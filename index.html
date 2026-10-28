@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LuxArb Demo — 二手奢侈品跨平台比价 + CPS 推广演示站</title>
-  <meta name="description" content="展示「A平台特价 vs B平台同款更高价」的联盟推广演示站。示例数据，非实时报价。联系 frank-cps@mail.grokbot.com" />
+  <title>LuxArb Demo — Compare Pre-Owned Luxury Prices Across Platforms</title>
+  <meta data-i18n-title="meta.title.home" />
+  <meta name="description" data-i18n-attr="content:meta.desc.home" content="Cross-platform price comparison for pre-owned luxury bags and watches. Sample listings for illustration. Contact frank-cps@mail.grokbot.com" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">Lux<span>Arb</span> Demo</a>
-      <nav class="nav" aria-label="主导航">
-        <a href="index.html" class="active">首页</a>
-        <a href="compare.html">比价列表</a>
-        <a href="disclaimer.html">免责声明</a>
+      <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.aria">
+        <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+        <a href="compare.html" data-i18n="nav.compare">Compare</a>
+        <a href="disclaimer.html" data-i18n="nav.disclaimer">Disclaimer</a>
       </nav>
     </div>
   </header>
@@ -22,46 +23,52 @@
   <main>
     <section class="hero">
       <div class="container">
-        <p><span class="badge-demo">演示站 · 示例数据</span></p>
-        <h1>二手奢侈品跨平台比价 + CPS 套利推广</h1>
-        <p class="lead">
-          本站面向联盟网络审核与内容发布：展示「A 平台特价 vs B 平台同款更高价」的比价叙事，
-          所有商品外链预留联盟深链位置。界面为简体中文；品牌与平台名保留英文。
+        <p><span class="badge-demo" data-i18n="badge.demo">Demo · Sample data</span></p>
+        <h1 data-i18n="hero.title">Compare pre-owned luxury prices across platforms</h1>
+        <p class="lead" data-i18n="hero.lead">
+          LuxArb helps shoppers spot price differences on authenticated pre-owned bags and watches across major resale platforms. Listings below are sample data for demonstration — not live inventory.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="compare.html">查看示例比价</a>
-          <a class="btn btn-outline" href="disclaimer.html">阅读免责声明</a>
+          <a class="btn btn-primary" href="compare.html" data-i18n="hero.cta.compare">Browse sample comparisons</a>
+          <a class="btn btn-outline" href="disclaimer.html" data-i18n="hero.cta.disclaimer">Read the disclaimer</a>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title">商业模式（四步）</h2>
-        <p class="section-sub">用于向联盟与读者说明内容逻辑；实际可套利空间受成色、鉴定、运费与平台费影响，详见免责声明。</p>
+        <h2 class="section-title" data-i18n="about.title">About LuxArb</h2>
+        <p class="section-sub" data-i18n="about.body">LuxArb is a price-comparison demo for shoppers who want to see how similar pre-owned luxury bags and watches are listed across major resale platforms. We highlight sample comparisons so you can understand the idea — then check live prices, condition, and authentication on the platform itself before you buy.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="how.title">How it works</h2>
+        <p class="section-sub" data-i18n="how.sub">A simple way to understand cross-platform prices. Real purchases still depend on condition, authenticity checks, shipping, and fees.</p>
         <div class="mode-grid">
           <article class="mode-card">
             <div class="step">STEP 01</div>
-            <h3>发现 A 平台特价</h3>
-            <p>在已接入 CPS 的二手奢侈品平台发现相对低价的同款包/表（示例数据，非实时）。</p>
+            <h3 data-i18n="how.s1.title">Find a listing</h3>
+            <p data-i18n="how.s1.body">Browse pre-owned luxury on platforms such as The RealReal, Fashionphile, Rebag, Vestiaire Collective, and Chrono24.</p>
           </article>
           <article class="mode-card">
             <div class="step">STEP 02</div>
-            <h3>对比 B 平台同款</h3>
-            <p>对比另一平台上相近成色、外观与年份的挂牌价，算出名义价差。</p>
+            <h3 data-i18n="how.s2.title">Compare similar items</h3>
+            <p data-i18n="how.s2.body">Look at nearby condition grades, year, and accessories on another platform to see how list prices differ.</p>
           </article>
           <article class="mode-card">
             <div class="step">STEP 03</div>
-            <h3>带 CPS 链发布</h3>
-            <p>将比价内容发布到本站或外部分发渠道，购买 CTA 使用联盟深链（当前为占位）。</p>
+            <h3 data-i18n="how.s3.title">Weigh the extras</h3>
+            <p data-i18n="how.s3.body">Factor in shipping, taxes, platform fees, and authenticity policies before deciding where to buy.</p>
           </article>
           <article class="mode-card">
             <div class="step">STEP 04</div>
-            <h3>成交计佣</h3>
-            <p>用户经联盟链接在 A 平台成交后，按网络后台规则结算 CPS 佣金（待账号与后台核实）。</p>
+            <h3 data-i18n="how.s4.title">Check the live price</h3>
+            <p data-i18n="how.s4.body">Open the platform listing to confirm current price, stock, and seller details. Links may open partner sites.</p>
           </article>
         </div>
-        <div class="platforms" aria-label="覆盖平台">
+        <div class="platforms" aria-label="Platforms covered" data-i18n-attr="aria-label:platforms.aria">
           <span class="platform-tag">The RealReal</span>
           <span class="platform-tag">Fashionphile</span>
           <span class="platform-tag">Rebag</span>
@@ -73,107 +80,111 @@
 
     <section class="section" style="padding-top:0">
       <div class="container">
+        <h2 class="section-title" data-i18n="method.title">Methodology note</h2>
+        <p class="section-sub" data-i18n="method.body">Sample spreads compare list prices for similar brand, model, and approximate condition. They do not adjust for shipping, taxes, platform fees, accessory differences, or authentication outcomes. Always verify details on the live listing.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
         <div class="alert">
-          <strong>重要：</strong>下列商品均为<strong>虚构示例</strong>，价格与价差仅用于演示页面结构与联盟审核预览。
-          成色、鉴定、运费、平台手续费会显著影响真实可套利空间；本站不保证任何收益。
+          <strong data-i18n="alert.important">Important:</strong>
+          <span data-i18n="alert.home"> All products below are fictional sample listings. Prices and spreads are for illustration only. Condition, authentication, shipping, and platform fees can change what a deal is really worth. This is not financial advice.</span>
         </div>
-        <h2 class="section-title">精选示例比价</h2>
-        <p class="section-sub">完整列表见「比价列表」页。CTA 当前指向 <code>#affiliate-pending</code>。</p>
+        <h2 class="section-title" data-i18n="featured.title">Featured sample comparisons</h2>
+        <p class="section-sub" data-i18n="featured.sub">See the full set on the Compare page. Sample listing — illustrative only.</p>
         <div class="cards">
           <article class="card">
             <div class="card-visual">
-              <span class="badge-demo">示例</span>
+              <span class="badge-demo" data-i18n="badge.sample">Sample listing — illustrative only</span>
               <span class="icon-label" aria-hidden="true">👜</span>
             </div>
             <div class="card-body">
               <div class="card-brand">Louis Vuitton</div>
-              <h3>Neverfull MM（Damier Ebene）</h3>
-              <p class="card-meta">成色：Very Good · 约 2018 年</p>
+              <h3>Neverfull MM (Damier Ebene)</h3>
+              <p class="card-meta" data-i18n="card.meta.lv">Condition: Very Good · ~2018</p>
               <div class="price-row">
                 <div class="price-box low">
-                  <div class="label">A 平台价</div>
+                  <div class="label" data-i18n="label.price.a">Lower sample price</div>
                   <div class="platform">The RealReal</div>
                   <div class="amount">$780</div>
                 </div>
                 <div class="price-box high">
-                  <div class="label">B 平台价</div>
+                  <div class="label" data-i18n="label.price.b">Higher sample price</div>
                   <div class="platform">Fashionphile</div>
                   <div class="amount">$1,450</div>
                 </div>
               </div>
               <div class="spread">
-                <span class="spread-label">名义价差</span>
+                <span class="spread-label" data-i18n="label.spread">List-price difference</span>
                 <span class="spread-val">+$670</span>
               </div>
-              <p class="cps-note">预估 CPS（占位）：约 5% · ≈ $39</p>
-              <a class="btn btn-cta" href="#affiliate-pending">去 A 平台看价</a>
-              <p class="card-footer-link"><a href="product-lv-neverfull.html">查看详情模板 →</a></p>
+              <a class="btn btn-cta js-platform-cta" href="#" data-platform="The RealReal" data-i18n="cta.view">View on platform</a>
+              <p class="card-footer-link"><a href="product-lv-neverfull.html" data-i18n="card.details">View details →</a></p>
             </div>
           </article>
 
           <article class="card">
             <div class="card-visual">
-              <span class="badge-demo">示例</span>
+              <span class="badge-demo" data-i18n="badge.sample">Sample listing — illustrative only</span>
               <span class="icon-label" aria-hidden="true">⌚</span>
             </div>
             <div class="card-body">
               <div class="card-brand">Rolex</div>
-              <h3>Datejust 36（Ref. 16200）</h3>
-              <p class="card-meta">成色：Good · 约 2005 年 · 含表盒</p>
+              <h3>Datejust 36 (Ref. 16200)</h3>
+              <p class="card-meta" data-i18n="card.meta.rolex">Condition: Good · ~2005 · With box</p>
               <div class="price-row">
                 <div class="price-box low">
-                  <div class="label">A 平台价</div>
+                  <div class="label" data-i18n="label.price.a">Lower sample price</div>
                   <div class="platform">Chrono24</div>
                   <div class="amount">$4,200</div>
                 </div>
                 <div class="price-box high">
-                  <div class="label">B 平台价</div>
+                  <div class="label" data-i18n="label.price.b">Higher sample price</div>
                   <div class="platform">The RealReal</div>
                   <div class="amount">$5,350</div>
                 </div>
               </div>
               <div class="spread">
-                <span class="spread-label">名义价差</span>
+                <span class="spread-label" data-i18n="label.spread">List-price difference</span>
                 <span class="spread-val">+$1,150</span>
               </div>
-              <p class="cps-note">预估 CPS（占位）：约 3% · ≈ $126</p>
-              <a class="btn btn-cta" href="#affiliate-pending">去 A 平台看价</a>
-              <p class="card-footer-link"><a href="product-rolex-dj.html">查看详情模板 →</a></p>
+              <a class="btn btn-cta js-platform-cta" href="#" data-platform="Chrono24" data-i18n="cta.view">View on platform</a>
+              <p class="card-footer-link"><a href="product-rolex-dj.html" data-i18n="card.details">View details →</a></p>
             </div>
           </article>
 
           <article class="card">
             <div class="card-visual">
-              <span class="badge-demo">示例</span>
+              <span class="badge-demo" data-i18n="badge.sample">Sample listing — illustrative only</span>
               <span class="icon-label" aria-hidden="true">👜</span>
             </div>
             <div class="card-body">
               <div class="card-brand">Chanel</div>
-              <h3>Classic Flap Medium（Caviar）</h3>
-              <p class="card-meta">成色：Excellent · 约 2019 年</p>
+              <h3>Classic Flap Medium (Caviar)</h3>
+              <p class="card-meta" data-i18n="card.meta.chanel">Condition: Excellent · ~2019</p>
               <div class="price-row">
                 <div class="price-box low">
-                  <div class="label">A 平台价</div>
+                  <div class="label" data-i18n="label.price.a">Lower sample price</div>
                   <div class="platform">Rebag</div>
                   <div class="amount">$5,890</div>
                 </div>
                 <div class="price-box high">
-                  <div class="label">B 平台价</div>
+                  <div class="label" data-i18n="label.price.b">Higher sample price</div>
                   <div class="platform">Vestiaire Collective</div>
                   <div class="amount">$7,200</div>
                 </div>
               </div>
               <div class="spread">
-                <span class="spread-label">名义价差</span>
+                <span class="spread-label" data-i18n="label.spread">List-price difference</span>
                 <span class="spread-val">+$1,310</span>
               </div>
-              <p class="cps-note">预估 CPS（占位）：约 5% · ≈ $295</p>
-              <a class="btn btn-cta" href="#affiliate-pending">去 A 平台看价</a>
-              <p class="card-footer-link"><a href="product-chanel-flap.html">查看详情模板 →</a></p>
+              <a class="btn btn-cta js-platform-cta" href="#" data-platform="Rebag" data-i18n="cta.view">View on platform</a>
+              <p class="card-footer-link"><a href="product-chanel-flap.html" data-i18n="card.details">View details →</a></p>
             </div>
           </article>
         </div>
-        <p style="margin-top:1.5rem"><a class="btn btn-outline" href="compare.html">查看全部 5 条示例 →</a></p>
+        <p style="margin-top:1.5rem"><a class="btn btn-outline" href="compare.html" data-i18n="see.all">See all 5 sample listings →</a></p>
       </div>
     </section>
   </main>
@@ -183,22 +194,22 @@
       <div class="footer-inner">
         <div>
           <div class="footer-brand">LuxArb Demo</div>
-          <p>联盟推广演示站 · 非实时行情</p>
-          <p>联系：<a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
+          <p data-i18n="footer.tagline">Pre-owned luxury price comparison · Sample data</p>
+          <p><span data-i18n="footer.contact">Contact:</span> <a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
         </div>
         <div class="footer-links">
-          <a href="compare.html">比价列表</a>
-          <a href="disclaimer.html">免责声明</a>
-          <a href="AFFILIATE_SIGNUP.md">联盟注册说明</a>
+          <a href="compare.html" data-i18n="footer.compare">Compare</a>
+          <a href="disclaimer.html" data-i18n="footer.disclaimer">Disclaimer</a>
         </div>
       </div>
       <p class="footer-note">
-        本站为联盟推广演示站，供 Impact / Awin / CJ / ShareASale 等网络审核参考。
-        示例商品与价格均为虚构，不构成投资、套利或购买建议。
+        <span data-i18n="footer.note">We may earn a commission when you buy through links on this site. Sample products and prices are fictional and for illustration only — not investment, trading, or purchase advice.</span>
         © <span id="year">2026</span> Frank Syun / LuxArb Demo
       </p>
     </div>
   </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
