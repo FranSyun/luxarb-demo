@@ -38,4 +38,5 @@ After records propagate, complete domain verification in the Vercel Domains UI i
 ## Notes
 
 - `vercel.json` enables `cleanUrls` (e.g. `/compare` → `compare.html`).
+- Production canonical is https://getluxarb.com; www should redirect there.
 - Do not require `npm install` or a build pipeline for this site.

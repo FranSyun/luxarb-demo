@@ -8,7 +8,7 @@ This static demo shows how similar authenticated listings can differ across majo
 
 **Contact:** frank-cps@mail.grokbot.com
 
-**Live demo:** https://fransyun.github.io/luxarb-demo/
+**Live demo:** https://getluxarb.com
 
 ## Pages
 
