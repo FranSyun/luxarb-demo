@@ -1,1 +1,18 @@
-{"cleanUrls":true}
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.getluxarb.com" }],
+      "destination": "https://getluxarb.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.getluxarb.com" }],
+      "destination": "https://getluxarb.com/:path*",
+      "permanent": true
+    }
+  ]
+}
