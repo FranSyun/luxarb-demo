@@ -504,7 +504,7 @@ img { max-width: 100%; height: auto; }
   .lang-switcher { width: 100%; margin-left: 0; justify-content: flex-end; }
 }
 
-/* Soft toast (Coming soon) */
+/* Unused toast hook kept so older layouts do not break if reintroduced */
 .toast {
   position: fixed;
   left: 50%;
@@ -548,3 +548,67 @@ html[dir="rtl"] .detail-visual .badge-demo {
 
 /* Hide legacy cps-note if any remain */
 .cps-note { display: none; }
+
+.offer-meta,
+.offer-kind,
+.verified,
+.match-note,
+.source-line {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.offer-kind { margin-top: 0.15rem; }
+.match-note { margin: 0.35rem 0 0.25rem; }
+.verified { margin-bottom: 0.35rem; }
+.source-line { margin-top: 0.65rem; }
+
+.btn-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+.btn-stack .btn { width: 100%; margin-top: 0; }
+
+.guide-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.2rem;
+  margin-bottom: 0.85rem;
+}
+.guide-block h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.guide-block p { color: var(--text-muted); font-size: 0.92rem; }
+
+.faq-list { display: flex; flex-direction: column; gap: 0.65rem; }
+.faq-list details {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--text);
+}
+.faq-list details p {
+  color: var(--text-muted);
+  margin-top: 0.55rem;
+  font-size: 0.92rem;
+}
+
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 1.25rem;
+  font-size: 0.88rem;
+}
+
+.prose h3 {
+  font-size: 1.05rem;
+  margin: 1.25rem 0 0.4rem;
+  color: var(--text);
+}

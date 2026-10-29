@@ -1,42 +1,28 @@
-# Deploy LuxArb Demo (getluxarb.com)
+# Deploy LuxArb (getluxarb.com)
 
 Static site — **no build step**. Serve the folder as-is on Vercel.
 
 ## Domain
 
-- Primary: **getluxarb.com** (DNS on Cloudflare)
-- Backup: keep the existing **GitHub Pages** (`github.io`) deployment as a fallback
+- Canonical: **https://getluxarb.com** (apex)
+- `www.getluxarb.com` redirects to the apex. `vercel.json` sends a permanent redirect for `/` and `/:path*` when the host is `www.getluxarb.com`.
+- DNS stays on Cloudflare as already configured for the apex and `www`.
 
-## Option A — Import from GitHub
+## If this repo already deploys from `main`
 
-1. Open [Vercel](https://vercel.com) → **Add New…** → **Project**
-2. Import **FranSyun/luxarb-demo**
-3. Framework Preset: **Other** (or leave unset)
-4. Build Command: leave **empty**
-5. Output Directory: leave **empty** / `.` (root is the site)
-6. Deploy
+Merging the pull request into `main` publishes this static tree. There is no install and no build command. Vercel should keep Framework Preset **Other**, with an empty build command and the repo root as the output.
 
-## Option B — Drag folder
+The redirect rules ship with `vercel.json`. After the merge, confirm `https://www.getluxarb.com/compare` lands on `https://getluxarb.com/compare`.
 
-1. Vercel → **Add New…** → **Project** → **Browse all templates** / drag-and-drop upload
-2. Upload the `luxury-cps-site` folder (or the repo root that contains `index.html`)
-3. Deploy with no build settings
+## First-time import
 
-## Custom domain + Cloudflare DNS
+1. Vercel → **Add New…** → **Project** → import **FranSyun/luxarb-demo**
+2. Framework Preset: **Other**
+3. Build Command: empty
+4. Output Directory: empty / `.`
+5. Deploy
+6. Settings → Domains: `getluxarb.com` and `www.getluxarb.com`
 
-In Vercel: Project → **Settings** → **Domains** → add `getluxarb.com` and `www.getluxarb.com`.
+## What not to add
 
-In Cloudflare DNS for `getluxarb.com` (DNS only / grey cloud is fine for apex A; proxy optional):
-
-| Type  | Name | Content                 | Notes                          |
-|-------|------|-------------------------|--------------------------------|
-| A     | `@`  | `76.76.21.21`           | Vercel apex                    |
-| CNAME | `www`| `cname.vercel-dns.com`  | www → Vercel                   |
-
-After records propagate, complete domain verification in the Vercel Domains UI if prompted.
-
-## Notes
-
-- `vercel.json` enables `cleanUrls` (e.g. `/compare` → `compare.html`).
-- Production canonical is https://getluxarb.com; www should redirect there.
-- Do not require `npm install` or a build pipeline for this site.
+Do not commit affiliate passwords, network OTPs, or placeholder tracking links. Approved URLs go in `js/affiliates.js` as `taggedUrl` only after the network issues them.

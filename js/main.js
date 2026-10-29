@@ -1,50 +1,100 @@
 /**
- * LuxArb Demo — visitor-facing JS
- * Platform CTAs use soft "Coming soon" toast (never expose placeholder codes).
+ * LuxArb — wire outbound CTAs from js/catalog.js + js/affiliates.js.
+ * Tagged partner URLs are used only when affiliates.js sets a real https taggedUrl.
  */
 (function () {
   "use strict";
 
-  function toastMessage() {
+  function t(key) {
     if (window.LuxI18n && typeof window.LuxI18n.t === "function") {
-      return window.LuxI18n.t("cta.coming");
+      return window.LuxI18n.t(key);
     }
-    return "Coming soon — live platform links will appear here.";
+    return "";
   }
 
-  function showToast(msg) {
-    var el = document.getElementById("toast");
-    if (!el) {
-      window.alert(msg);
-      return;
-    }
-    el.textContent = msg;
-    el.hidden = false;
-    el.classList.add("toast-show");
-    clearTimeout(showToast._timer);
-    showToast._timer = setTimeout(function () {
-      el.classList.remove("toast-show");
-      el.hidden = true;
-    }, 3200);
-  }
-
-  document.querySelectorAll("a.js-platform-cta").forEach(function (a) {
-    a.addEventListener("click", function (e) {
-      var href = a.getAttribute("href") || "";
-      // Soft-gate placeholders only; allow real http(s) links through
-      if (!href || href === "#" || href.indexOf("affiliate-pending") !== -1) {
-        e.preventDefault();
-        showToast(toastMessage());
+  function offerById(id) {
+    var catalog = window.LUXARB_CATALOG;
+    if (!catalog || !id) return null;
+    var comps = catalog.comparisons || [];
+    var i, j, offers;
+    for (i = 0; i < comps.length; i++) {
+      offers = comps[i].offers || [];
+      for (j = 0; j < offers.length; j++) {
+        if (offers[j].id === id) return offers[j];
       }
-    });
-  });
+    }
+    return null;
+  }
 
-  var yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = String(new Date().getFullYear());
+  function usableTagged(url) {
+    if (!url || typeof url !== "string") return false;
+    var u = url.trim();
+    if (!/^https:\/\/[^\s]+$/i.test(u)) return false;
+    if (/placeholder|changeme|paste-here|example\.com|\bTODO\b|\bTBD\b/i.test(u)) return false;
+    return true;
+  }
+
+  function anyTagged() {
+    var map = window.LUXARB_AFFILIATES || {};
+    return Object.keys(map).some(function (key) {
+      return map[key] && usableTagged(map[key].taggedUrl);
+    });
+  }
+
+  function applyLinks() {
+    document.querySelectorAll("a.js-outbound").forEach(function (a) {
+      var offer = offerById(a.getAttribute("data-offer"));
+      var platform = (offer && offer.platform) || a.getAttribute("data-platform") || "";
+      var cfg = (window.LUXARB_AFFILIATES || {})[platform];
+      var publicUrl = (offer && offer.publicUrl) || a.getAttribute("href") || "";
+      var href = publicUrl;
+      if (cfg && usableTagged(cfg.taggedUrl)) {
+        var tagged = cfg.taggedUrl.trim();
+        href = tagged.indexOf("{url}") !== -1
+          ? tagged.split("{url}").join(encodeURIComponent(publicUrl))
+          : tagged;
+      }
+      if (href) a.setAttribute("href", href);
+      a.setAttribute("rel", "sponsored noopener noreferrer");
+      a.setAttribute("target", "_blank");
+    });
+
+    var note = document.getElementById("footer-disclosure");
+    if (note) {
+      var key = anyTagged() ? "footer.note.partner" : "footer.note";
+      note.setAttribute("data-i18n", key);
+      var text = t(key);
+      if (text) note.textContent = text;
+    }
+  }
+
+  function syncSocial() {
+    var ogTitle = document.querySelector('meta[property="og:title"]');
+    var ogDesc = document.querySelector('meta[property="og:description"]');
+    var twTitle = document.querySelector('meta[name="twitter:title"]');
+    var twDesc = document.querySelector('meta[name="twitter:description"]');
+    var desc = document.querySelector('meta[name="description"]');
+    if (ogTitle) ogTitle.setAttribute("content", document.title);
+    if (twTitle) twTitle.setAttribute("content", document.title);
+    if (desc && ogDesc) ogDesc.setAttribute("content", desc.getAttribute("content") || "");
+    if (desc && twDesc) twDesc.setAttribute("content", desc.getAttribute("content") || "");
+  }
+
+  function boot() {
+    applyLinks();
+    syncSocial();
+    var yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
   }
 
   document.addEventListener("luxarb:langchange", function () {
-    // Refresh toast copy context if open; no-op otherwise
+    applyLinks();
+    syncSocial();
   });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
 })();

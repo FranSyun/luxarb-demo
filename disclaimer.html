@@ -3,20 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Disclaimer — LuxArb Demo</title>
-  <meta name="description" content="Condition, authenticity, shipping, and fees affect real-world value. Sample data is illustrative only." />
+  <title>Disclaimer — Prices, Condition, and Partner Links | LuxArb</title>
   <meta data-i18n-title="meta.title.disclaimer" />
+  <meta name="description" data-i18n-attr="content:meta.desc.disclaimer" content="LuxArb compares public list prices. Condition, authentication, shipping, and fees change what you pay. Links open retailer sites. Not financial advice." />
   <link rel="canonical" href="https://getluxarb.com/disclaimer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LuxArb" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://getluxarb.com/disclaimer" />
+  <meta property="og:title" content="Disclaimer — Prices, Condition, and Partner Links | LuxArb" />
+  <meta property="og:description" content="LuxArb compares public list prices. Condition, authentication, shipping, and fees change what you pay. Not financial advice." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Disclaimer — Prices, Condition, and Partner Links | LuxArb" />
+  <meta name="twitter:description" content="Public list prices only. Confirm condition, authentication, and fees on the retailer." />
+  <meta name="robots" content="index,follow" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Lux<span>Arb</span> Demo</a>
+      <a class="logo" href="index.html">Lux<span>Arb</span></a>
       <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.aria">
         <a href="index.html" data-i18n="nav.home">Home</a>
         <a href="compare.html" data-i18n="nav.compare">Compare</a>
+        <a href="compare.html#faq" data-i18n="nav.faq">FAQ</a>
         <a href="disclaimer.html" class="active" data-i18n="nav.disclaimer">Disclaimer</a>
       </nav>
     </div>
@@ -26,44 +36,45 @@
     <section class="section">
       <div class="container prose">
         <h1 data-i18n="disc.h1">Disclaimer</h1>
-        <p data-i18n="disc.intro">LuxArb Demo is a static demonstration site for cross-platform pre-owned luxury price comparison, operated by Frank Syun. Please read the following before using any information on this site.</p>
+        <p data-i18n="disc.intro">LuxArb is a price-comparison site for pre-owned luxury, operated by Frank Syun. Please read this before using any price on the site.</p>
 
-        <h2 data-i18n="disc.s1">1. Sample data — not live quotes</h2>
-        <p data-i18n="disc.s1.p">Items labeled as samples (names, condition, prices, and spreads) are fictional or historical placeholders used to demonstrate layout and narrative. They:</p>
+        <h2 data-i18n="disc.s1">1. Snapshots, not a live quote</h2>
+        <p data-i18n="disc.s1.p">Each card records a public asking price we could open on the check date printed on the card (timezone Asia/Shanghai). Those figures:</p>
         <ul>
-          <li data-i18n="disc.s1.li1">do not represent live list prices or stock on any platform;</li>
-          <li data-i18n="disc.s1.li2">do not guarantee that an item can be bought, sold, or authenticated;</li>
-          <li data-i18n="disc.s1.li3">are illustrative only and may not match current market conditions.</li>
+          <li data-i18n="disc.s1.li1">can change, sell through, or be withdrawn after we check them;</li>
+          <li data-i18n="disc.s1.li2">are not an offer from LuxArb and do not guarantee you can buy the item at that price;</li>
+          <li data-i18n="disc.s1.li3">are list prices only. If a button says “platform search — verify live price,” we did not capture one in-stock ask on that platform.</li>
         </ul>
 
-        <h2 data-i18n="disc.s2">2. Condition, authenticity, and “same item”</h2>
-        <p data-i18n="disc.s2.p">In the pre-owned market, two listings are rarely equivalent. Factors that can erase an apparent price gap include:</p>
+        <h2 data-i18n="disc.s2">2. Condition, authenticity, and “the same item”</h2>
+        <p data-i18n="disc.s2.p">Two listings are rarely equivalent. A gap can disappear because of:</p>
         <ul>
-          <li data-i18n="disc.s2.li1">Condition grading differences (Excellent / Very Good / Good — standards vary by platform);</li>
-          <li data-i18n="disc.s2.li2">Year, serials, and accessories (dust bag, receipt, watch box, warranty card);</li>
-          <li data-i18n="disc.s2.li3">Authentication outcomes and each platform’s authenticity policy; counterfeit risk is borne by the buyer;</li>
-          <li data-i18n="disc.s2.li4">Color variation, wear location, repair history, and other details not fully disclosed in a short listing.</li>
+          <li data-i18n="disc.s2.li1">condition grades that do not share a scale (Excellent, Very Good, Great, and similar labels);</li>
+          <li data-i18n="disc.s2.li2">year, stamp or reference, dial, and accessories (dust bag, box, lock, keys, papers);</li>
+          <li data-i18n="disc.s2.li3">authentication and each platform’s return rules — counterfeit and description risk stays with the buyer and the selling platform;</li>
+          <li data-i18n="disc.s2.li4">color, wear, repair, and odor that a short card cannot fully show.</li>
         </ul>
 
         <h2 data-i18n="disc.s3">3. Shipping, fees, and taxes</h2>
-        <p data-i18n="disc.s3.p">Cross-platform comparisons can overlook real costs. Items that may reduce any apparent savings include:</p>
+        <p data-i18n="disc.s3.p">A lower list price is not money saved. Costs that can close a gap include:</p>
         <ul>
-          <li data-i18n="disc.s3.li1">Domestic or international shipping, insurance, and duties;</li>
-          <li data-i18n="disc.s3.li2">Marketplace commissions, listing fees, and payment processing;</li>
-          <li data-i18n="disc.s3.li3">Return shipping and restocking within return windows;</li>
-          <li data-i18n="disc.s3.li4">Currency swings and the cost of capital while holding an item.</li>
+          <li data-i18n="disc.s3.li1">domestic or international shipping, insurance, and duties;</li>
+          <li data-i18n="disc.s3.li2">sales tax, payment fees, and any seller commission if you later resell;</li>
+          <li data-i18n="disc.s3.li3">return shipping inside the platform’s return window;</li>
+          <li data-i18n="disc.s3.li4">currency moves and the time your money is tied up.</li>
         </ul>
-        <p data-i18n="disc.s3.p2">Therefore, a displayed list-price difference is not the same as money in hand. This site does not encourage inexperienced speculation across platforms.</p>
+        <p data-i18n="disc.s3.p2">A displayed list-price difference is not cash in hand. This site does not recommend buying on one platform to sell on another.</p>
 
         <h2 data-i18n="disc.s4">4. Links and commissions</h2>
-        <p data-i18n="disc.s4.p">“View on platform” / “Check price” buttons may open partner or marketplace pages. We may earn a commission when you buy through links on this site. That does not change the item’s listed price. Some buttons may show “Coming soon” until live product links are connected.</p>
+        <p data-i18n="disc.s4.p">“Shop on …” buttons open a public retailer listing or that platform’s search. They are not tagged partner links unless a program has been approved and the tagged URL is set in our configuration. When a real partner link is in use, the footer says we may earn a commission if you buy through it. Until then the footer says links may open retailer sites, and we may earn a commission when partner programs are active. A commission, if any, does not change the item’s list price.</p>
 
         <h2 data-i18n="disc.s5">5. Not financial or legal advice</h2>
-        <p data-i18n="disc.s5.p">Nothing on this site is investment, financial, or legal advice. Pre-owned luxury markets move; past or sample spreads do not predict future results. Readers should do their own research and follow local laws and each platform’s terms.</p>
+        <p data-i18n="disc.s5.p">Nothing on this site is investment, financial, or legal advice. Pre-owned markets move. A past gap does not predict a future result. Do your own research and follow the law and each platform’s terms.</p>
 
         <h2 data-i18n="disc.s6">6. Contact</h2>
-        <p><span data-i18n="disc.s6.p">Questions about this demo site:</span> <a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
-        <p data-i18n="disc.s6.p2">LuxArb Demo does not sell inventory from its own stock; it is a comparison and discovery demo.</p>
+        <p><span data-i18n="disc.s6.p">Questions about this site:</span> <a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
+        <p data-i18n="disc.s6.p2">LuxArb does not sell inventory from its own stock. It compares public listings and sends you to the retailer to verify them.</p>
+        <p><a href="compare.html">Back to price comparisons</a></p>
       </div>
     </section>
   </main>
@@ -72,23 +83,26 @@
     <div class="container">
       <div class="footer-inner">
         <div>
-          <div class="footer-brand">LuxArb Demo</div>
-          <p data-i18n="footer.tagline">Pre-owned luxury price comparison · Sample data</p>
+          <div class="footer-brand">LuxArb</div>
+          <p data-i18n="footer.tagline">Pre-owned luxury price comparison</p>
           <p><span data-i18n="footer.contact">Contact:</span> <a href="mailto:frank-cps@mail.grokbot.com">frank-cps@mail.grokbot.com</a></p>
         </div>
         <div class="footer-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
           <a href="compare.html" data-i18n="footer.compare">Compare</a>
           <a href="disclaimer.html" data-i18n="footer.disclaimer">Disclaimer</a>
         </div>
       </div>
       <p class="footer-note">
-        <span data-i18n="footer.note">We may earn a commission when you buy through links on this site. Sample products and prices are fictional and for illustration only — not investment, trading, or purchase advice.</span>
-        © <span id="year">2026</span> Frank Syun / LuxArb Demo
+        <span id="footer-disclosure" data-i18n="footer.note">Links may open retailer sites; we may earn a commission when partner programs are active. Prices change. Confirm condition, authentication, and fees on the platform. Not financial advice.</span>
+        © <span id="year">2026</span> Frank Syun / LuxArb
       </p>
     </div>
   </footer>
-  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="js/i18n-refresh.js"></script>
   <script src="js/i18n.js"></script>
+  <script src="js/affiliates.js"></script>
+  <script src="js/catalog.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

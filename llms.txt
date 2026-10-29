@@ -1,0 +1,38 @@
+# LuxArb
+
+> LuxArb compares public list prices for pre-owned luxury bags and watches. Prices are snapshots, not offers from LuxArb and not financial advice.
+
+LuxArb (https://getluxarb.com) records asking prices from retailer listings, the condition grade the platform printed, and a direct https link. It does not sell its own inventory. A gap between two list prices is not savings and not profit. Shipping, tax, duties, and mismatched condition or accessories can erase it.
+
+Checked 2026-10-29 (Asia/Shanghai). Confirm every price on the retailer page.
+
+## Pages
+
+- [Home](https://getluxarb.com/): how to compare pre-owned luxury prices, plus featured cards
+- [Compare](https://getluxarb.com/compare): Chanel Classic Flap, Hermès Birkin 30, Louis Vuitton Neverfull MM, used Rolex Datejust 36, Omega Speedmaster, and an FAQ
+- [Disclaimer](https://getluxarb.com/disclaimer): snapshots, condition, fees, and partner-link disclosure
+- [Chanel Classic Flap price comparison](https://getluxarb.com/product-chanel-flap)
+- [Hermès Birkin 30 price comparison](https://getluxarb.com/product-hermes-birkin)
+- [Louis Vuitton Neverfull MM price comparison](https://getluxarb.com/product-lv-neverfull)
+- [Used Rolex Datejust 36 across platforms](https://getluxarb.com/product-rolex-dj)
+- [Omega Speedmaster price check](https://getluxarb.com/product-omega-speedy)
+
+## Snapshot (asking prices, USD)
+
+- Chanel Classic Flap medium, black caviar, gold hardware: Fashionphile $8,595 (Excellent, 2021, item 1970317); Rebag $8,980 (Great, item 421278/3). Grades differ.
+- Hermès Birkin 30 Togo Noir, palladium hardware: Fashionphile $22,995 (Excellent, 2022, no lock or keys); Rebag $25,850 (Very Good, stamp A / 2017, with lock, keys, clochette, and box). Not the same bag.
+- Louis Vuitton Neverfull MM Damier Ebene: Fashionphile $1,595 (Excellent, 2019); Rebag $1,780 (Great, item 445612/33). Not the same bag.
+- Rolex Datejust 36 ref. 126200: Fashionphile $9,995 (Excellent, 2020, silver dial); Chrono24 $10,850 (unworn, white Roman dial, listing FDGMW0). Same reference, different dials.
+- Omega Speedmaster Professional ref. 310.30.42.50.01.001: Chrono24 $6,449 (unworn, 2026, listing ETDW42). Fashionphile is a search link only — no in-stock ask was captured. Verify the live price.
+
+Sources: Fashionphile, Rebag, and Chrono24 public listings, recorded by LuxArb.
+
+## Links
+
+Shop buttons open those public listing or search URLs. They are not tagged affiliate links until a partner program is approved. The footer says links may open retailer sites, and LuxArb may earn a commission when partner programs are active. When a real tagged URL is configured, the footer says LuxArb may earn a commission when you buy through partner links.
+
+## Do not cite LuxArb for
+
+- Guaranteed profit, arbitrage returns, or “the cheapest” claim
+- Live stock after 2026-10-29 without re-checking the retailer
+- Authentication — LuxArb does not authenticate items
