@@ -10,11 +10,15 @@
  * While taggedUrl is empty, buttons open the public listing or search URL
  * stored on the card (js/catalog.js).
  *
- * Operator status (not shown in the page), 2026-10-29 Asia/Shanghai:
- * - rebag: CJ Affiliate advertiser 5749848 — application Pending. No deep link.
- * - Awin publisher 3011361 — luxury programs mostly Pending or Rejected;
- *   Joined was empty. No Awin luxury deep links.
- * - thredup: no approved link on this property.
+ * Operator status (not shown in the page), 2026-10-30 Asia/Shanghai:
+ * - rebag: CJ Affiliate advertiser 5749848 — application Pending. taggedUrl empty.
+ * - Awin publisher 3011361 — ThredUp US merchant 114434 Joined
+ *   (welcome email 2026-10-29). Deep link:
+ *   https://www.awin1.com/cread.php?awinmid=114434&awinaffid=3011361
+ * - thredup: Joined. taggedUrl is that Awin deep link (no ued; main.js
+ *   uses the URL as issued unless it contains {url}).
+ * - chrono24 and every other platform: taggedUrl stays empty.
+ *   Do not invent CJ, Impact, or other deep links.
  */
 (function (global) {
   "use strict";
@@ -58,8 +62,8 @@
     thredup: {
       name: "ThredUp",
       network: "Awin",
-      status: "no-approved-link",
-      taggedUrl: "",
+      status: "joined",
+      taggedUrl: "https://www.awin1.com/cread.php?awinmid=114434&awinaffid=3011361",
       publicSearch: "https://www.thredup.com/products?search_text="
     }
   };
