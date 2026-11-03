@@ -8,8 +8,8 @@
   "use strict";
 
   global.LUXARB_CATALOG = {
-    checkedAt: "2026-10-29T13:30:00+08:00",
-    checkedOn: "2026-10-29",
+    checkedAt: "2026-11-03T12:00:00+08:00",
+    checkedOn: "2026-11-03",
     timezone: "Asia/Shanghai",
     comparisons: [
       {
@@ -84,13 +84,13 @@
           {
             id: "neverfull-fashionphile",
             platform: "fashionphile",
-            price: 1595,
+            price: null,
             currency: "USD",
-            urlKind: "listing",
-            publicUrl: "https://www.fashionphile.com/products/louis-vuitton-damier-ebene-neverfull-mm-1992692",
-            condition: "Excellent",
-            year: "2019",
-            details: "Item #1992692. Fashionphile certificate. Pochette not listed."
+            urlKind: "search",
+            publicUrl: "https://www.fashionphile.com/search?q=Louis+Vuitton+Neverfull+MM",
+            condition: "",
+            year: "",
+            details: "Item #1992692 is sold out as of 2026-11-03. No live ask. This opens Fashionphile search."
           },
           {
             id: "neverfull-rebag",
