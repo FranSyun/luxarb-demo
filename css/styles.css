@@ -465,6 +465,17 @@ img { max-width: 100%; height: auto; }
   display: block;
   margin-bottom: 0.45rem;
 }
+.footer-network {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.4rem;
+  margin-top: 0.65rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+.footer-network-label { margin-right: 0.15rem; }
 
 .page-header {
   padding: 2rem 0 0.5rem;
