@@ -5,12 +5,7 @@
 (function () {
   "use strict";
 
-  function t(key) {
-    if (window.LuxI18n && typeof window.LuxI18n.t === "function") {
-      return window.LuxI18n.t(key);
-    }
-    return "";
-  }
+  var AFFILIATE_DISCLOSURE = "Affiliate disclosure: We may earn a commission if you buy through links on this site, at no extra cost to you. Prices and availability can change on retailer sites.";
 
   function offerById(id) {
     var catalog = window.LUXARB_CATALOG;
@@ -34,13 +29,6 @@
     return true;
   }
 
-  function anyTagged() {
-    var map = window.LUXARB_AFFILIATES || {};
-    return Object.keys(map).some(function (key) {
-      return map[key] && usableTagged(map[key].taggedUrl);
-    });
-  }
-
   function applyLinks() {
     document.querySelectorAll("a.js-outbound").forEach(function (a) {
       var offer = offerById(a.getAttribute("data-offer"));
@@ -61,10 +49,8 @@
 
     var note = document.getElementById("footer-disclosure");
     if (note) {
-      var key = anyTagged() ? "footer.note.partner" : "footer.note";
-      note.setAttribute("data-i18n", key);
-      var text = t(key);
-      if (text) note.textContent = text;
+      note.removeAttribute("data-i18n");
+      note.textContent = AFFILIATE_DISCLOSURE;
     }
   }
 

@@ -33,7 +33,7 @@ Sources: Fashionphile, Rebag, and Chrono24 public listings, recorded by LuxArb.
 
 ## Links
 
-Shop buttons open those public listing or search URLs. They are not tagged affiliate links until a partner program is approved. The footer says links may open retailer sites, and LuxArb may earn a commission when partner programs are active. When a real tagged URL is configured, the footer says LuxArb may earn a commission when you buy through partner links.
+Shop buttons open public listing or search URLs on the retailer. LuxArb does not run its own checkout. Affiliate disclosure: We may earn a commission if you buy through links on this site, at no extra cost to you. Prices and availability can change on retailer sites.
 
 ## Do not cite LuxArb for
 
