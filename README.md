@@ -16,7 +16,8 @@ LuxArb records public asking prices — platform, list price, condition when the
 |------|---------|
 | `index.html` | Home — how to compare, featured checked prices |
 | `compare.html` | Five comparisons, method, and FAQ |
-| `product-*.html` | One comparison per model, with direct retailer links |
+| `product-*.html` | One comparison or buying guide per model, with direct retailer links |
+| `guide-chanel-prices.html` | How to compare secondhand Chanel prices |
 | `disclaimer.html` | Snapshots, condition, fees, partner-link disclosure |
 | `llms.txt` | Short summary for answer engines |
 | `sitemap.xml` / `robots.txt` | Discovery |
@@ -30,7 +31,7 @@ LuxArb records public asking prices — platform, list price, condition when the
 
 Do not invent tracking URLs. While `taggedUrl` is empty, buttons open the public listing or search URL, with `rel="sponsored noopener noreferrer"`.
 
-Checked snapshot in this repo: **2026-10-29 (Asia/Shanghai)**.
+Checked snapshot in this repo: **2026-11-03 (Asia/Shanghai)** for the handbag asks. Fashionphile Neverfull item 1992692 is sold out, so that button is search-only. Watch cards remain the 2026-10-29 record.
 
 ## Local preview
 
@@ -41,4 +42,4 @@ python3 -m http.server 8080
 
 ## Footer disclosure
 
-Until a tagged partner URL is set, the footer says links may open retailer sites, and LuxArb may earn a commission when partner programs are active. After any `taggedUrl` is a real https link, the footer switches to: we may earn a commission when you buy through partner links.
+Every page shows this fixed line: “Affiliate disclosure: We may earn a commission if you buy through links on this site, at no extra cost to you. Prices and availability can change on retailer sites.”
