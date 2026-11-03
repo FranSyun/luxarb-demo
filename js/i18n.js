@@ -66,7 +66,7 @@
   "footer.contact": "Contact:",
   "footer.compare": "Compare",
   "footer.disclaimer": "Disclaimer",
-  "footer.note": "Links may open retailer sites; we may earn a commission when partner programs are active. Prices change. Confirm condition, authentication, and fees on the platform. Not financial advice.",
+  "footer.note": "Affiliate disclosure: We may earn a commission if you buy through links on this site, at no extra cost to you. Prices and availability can change on retailer sites.",
   "meta.title.chanel": "Chanel Classic Flap Price Comparison | LuxArb",
   "meta.desc.chanel": "Black caviar medium Classic Flap list prices on Fashionphile and Rebag, with condition, hardware, and the direct listing URL. Snapshot 2026-10-29.",
   "meta.title.compare": "Compare Pre-Owned Luxury Prices — Chanel, Hermès, Rolex | LuxArb",
@@ -106,7 +106,7 @@
   "faq.q6": "How do duties, shipping, and currency affect a cross-border purchase?",
   "faq.a6": "Enough to erase a small gap. A watch shipping from another country can add insured shipping, VAT, or duty that the list price does not include. Confirm the total for your destination before you pay. The Omega listing checked here is a New York seller; another listing might not be.",
   "faq.q7": "Are the “Shop on …” buttons affiliate links?",
-  "faq.a7": "Not until a partner program is approved. Today they open the public listing or the platform search named on the card. If a tagged partner link is added later, the footer says LuxArb may earn a commission. Until then the footer says links may open retailer sites, and we may earn a commission when partner programs are active.",
+  "faq.a7": "Some links on this site may be affiliate links. We may earn a commission if you buy through links on this site, at no extra cost to you. The buttons open the retailer listing or that platform’s search. Prices and availability can change on retailer sites.",
   "meta.title.disclaimer": "Disclaimer — Prices, Condition, and Partner Links | LuxArb",
   "meta.desc.disclaimer": "LuxArb compares public list prices. Condition, authentication, shipping, and fees change what you pay. Links open retailer sites. Not financial advice.",
   "disc.h1": "Disclaimer",
@@ -130,7 +130,7 @@
   "disc.s3.li4": "currency moves and the time your money is tied up.",
   "disc.s3.p2": "A displayed list-price difference is not cash in hand. This site does not recommend buying on one platform to sell on another.",
   "disc.s4": "4. Links and commissions",
-  "disc.s4.p": "“Shop on …” buttons open a public retailer listing or that platform’s search. They are not tagged partner links unless a program has been approved and the tagged URL is set in our configuration. When a real partner link is in use, the footer says we may earn a commission if you buy through it. Until then the footer says links may open retailer sites, and we may earn a commission when partner programs are active. A commission, if any, does not change the item’s list price.",
+  "disc.s4.p": "Affiliate disclosure: We may earn a commission if you buy through links on this site, at no extra cost to you. Prices and availability can change on retailer sites. “Shop on …” buttons open a public retailer listing or that platform’s search. Public list prices, condition, and shipping are subject to the retailer page. A commission, if any, does not change the item’s list price.",
   "disc.s5": "5. Not financial or legal advice",
   "disc.s5.p": "Nothing on this site is investment, financial, or legal advice. Pre-owned markets move. A past gap does not predict a future result. Do your own research and follow the law and each platform’s terms.",
   "disc.s6": "6. Contact",
@@ -170,7 +170,7 @@
   "nav.aria": "Main",
   "platforms.aria": "Platforms covered",
   "lang.label": "Language",
-  "footer.note.partner": "We may earn a commission when you buy through partner links. Prices change. Confirm condition, authentication, and fees on the platform. Not financial advice."
+  "footer.note.partner": "Affiliate disclosure: We may earn a commission if you buy through links on this site, at no extra cost to you. Prices and availability can change on retailer sites."
 };
 
   var OVERRIDES = {
@@ -210,8 +210,6 @@
     "disc.h1": "免责声明",
     "prod.table.item": "项目",
     "prod.table.value": "详情",
-    "footer.note": "链接可能打开零售商网站；联盟计划生效时，我们可能获得佣金。价格会变。请在平台上确认成色、鉴定与费用。不构成财务建议。",
-    "footer.note.partner": "通过合作链接购买时，我们可能获得佣金。价格会变。请在平台上确认成色、鉴定与费用。不构成财务建议。",
     "prod.alert": "以下价格摘自 2026-10-29（Asia/Shanghai）的公开挂牌，可能已调价或售出。成色、鉴定、运费与费用都会改变实际花费。不构成财务建议。",
     "hero.lead": "LuxArb 把买家常搜的 Chanel、Hermès、Louis Vuitton、Rolex 与 Omega 在多家转售平台上的公开挂牌价放在一起。这些是摘录的要价，不是库存承诺，也不是收益承诺。",
     "about.title": "关于 LuxArb",
@@ -254,7 +252,7 @@
     "faq.q6": "关税、运费和汇率对跨境购买影响有多大？",
     "faq.a6": "大到可以抹平很小的价差。从其他国家寄出的表，可能另加保价运费、增值税或关税，而这些不在挂牌价里。付款前请确认送达地的总价。本页核对的 Omega 卖家在纽约，别的挂牌未必如此。",
     "faq.q7": "「前往某平台」按钮是联盟链接吗？",
-    "faq.a7": "在合作计划获批之前不是。目前它们打开卡片上写明的公开商品页或平台搜索。若以后换成带追踪的合作链接，页脚会写明通过合作链接购买时我们可能获得佣金。在此之前，页脚写的是：链接可能打开零售商网站；联盟计划生效时，我们可能获得佣金。",
+    "faq.a7": "本站部分链接可能是联盟链接。若你通过本站链接购买，我们可能获得佣金，你无需额外付费。按钮会打开零售商商品页或该平台搜索。价格与库存以零售商网站为准，可能变化。",
     "disc.intro": "LuxArb 是由 Frank Syun 运营的二手奢侈品比价站。使用站上任何价格前，请先阅读本页。",
     "disc.s1": "1. 快照，不是实时报价",
     "disc.s1.p": "每张卡片记录我们在卡片所印核对日（时区 Asia/Shanghai）能够打开的公开要价。这些数字：",
@@ -275,7 +273,7 @@
     "disc.s3.li4": "汇率变动，以及资金被占用的时间。",
     "disc.s3.p2": "页面上的挂牌价差额不是到手现金。本站不建议在一个平台买入、再到另一个平台卖出。",
     "disc.s4": "4. 链接与佣金",
-    "disc.s4.p": "「前往…」按钮打开公开的零售商商品页或该平台搜索。在合作计划获批并把追踪链接写入配置之前，它们不是带追踪的合作链接。使用真实合作链接时，页脚会说明若你通过该链接购买，我们可能获得佣金。在此之前，页脚说明链接可能打开零售商网站，且联盟计划生效时我们可能获得佣金。佣金（若有）不改变商品挂牌价。",
+    "disc.s4.p": "联盟披露：若你通过本站链接购买，我们可能获得佣金，你无需额外付费。价格与库存以零售商网站为准，可能变化。「前往…」按钮打开公开的零售商商品页或该平台搜索。公开挂牌价、成色与运费以商家页面为准。佣金（若有）不改变商品挂牌价。",
     "disc.s5": "5. 不是财务或法律建议",
     "disc.s5.p": "本站内容不是投资、财务或法律建议。二手市场会波动。过去的价差不能预测未来结果。请自行研究，并遵守法律与各平台条款。",
     "disc.s6": "6. 联系",
@@ -329,8 +327,6 @@
     "disc.h1": "免責聲明",
     "prod.table.item": "項目",
     "prod.table.value": "詳情",
-    "footer.note": "連結可能開啟零售商網站；聯盟計畫生效時，我們可能獲得佣金。價格會變。請在平台上確認成色、鑑定與費用。不構成財務建議。",
-    "footer.note.partner": "透過合作連結購買時，我們可能獲得佣金。價格會變。請在平台上確認成色、鑑定與費用。不構成財務建議。",
     "prod.alert": "以下價格摘自 2026-10-29（Asia/Shanghai）的公開掛牌，可能已調價或售出。成色、鑑定、運費與費用都會改變實際花費。不構成財務建議。",
     "hero.lead": "LuxArb 把買家常搜的 Chanel、Hermès、Louis Vuitton、Rolex 與 Omega 在多家轉售平台上的公開掛牌價放在一起。這些是摘錄的要價，不是庫存承諾，也不是收益承諾。",
     "about.title": "關於 LuxArb",
@@ -355,7 +351,7 @@
     "faq.q5": "在一個二奢網站買、到另一個網站賣，是否穩賺？",
     "faq.a5": "不穩賺。掛牌價會變，商品會售出，成色可能有爭議，費用和關稅是真實成本。LuxArb 上的內容都不是財務建議。",
     "faq.q7": "「前往某平台」按鈕是聯盟連結嗎？",
-    "faq.a7": "在合作計畫核准之前不是。目前它們打開卡片上寫明的公開商品頁或平台搜尋。若以後換成帶追蹤的合作連結，頁尾會寫明透過合作連結購買時我們可能獲得佣金。",
+    "faq.a7": "本站部分連結可能是聯盟連結。若你透過本站連結購買，我們可能獲得佣金，你無需額外付費。按鈕會開啟零售商商品頁或該平台搜尋。價格與庫存以零售商網站為準，可能變化。",
     "disc.intro": "LuxArb 是由 Frank Syun 營運的二手奢侈品比價站。使用站上任何價格前，請先閱讀本頁。",
     "disc.s1": "1. 快照，不是即時報價",
     "disc.s5": "5. 不是財務或法律建議",
@@ -403,8 +399,6 @@
     "disc.h1": "免責事項",
     "prod.table.item": "項目",
     "prod.table.value": "詳細",
-    "footer.note": "リンクは小売サイトを開くことがあります。提携プログラムが有効な場合、成果報酬を得ることがあります。価格は変動します。状態・真贋・費用は各サイトで確認してください。投資助言ではありません。",
-    "footer.note.partner": "提携リンク経由のご購入で成果報酬を得ることがあります。価格は変動します。状態・真贋・費用は各サイトで確認してください。投資助言ではありません。",
     "prod.alert": "以下の価格は 2026-10-29（Asia/Shanghai）に公開出品から記録したものです。変更・売約済みの場合があります。状態、鑑定、送料、手数料で支払額は変わります。投資助言ではありません。"
   },
   "ko": {
@@ -443,8 +437,6 @@
     "disc.h1": "고지",
     "prod.table.item": "항목",
     "prod.table.value": "세부",
-    "footer.note": "링크는 판매자 사이트를 열 수 있습니다. 제휴 프로그램이 활성화되면 수수료를 받을 수 있습니다. 가격은 변합니다. 상태, 감정, 비용은 해당 플랫폼에서 확인하세요. 재무 자문이 아닙니다.",
-    "footer.note.partner": "제휴 링크를 통해 구매하시면 수수료를 받을 수 있습니다. 가격은 변합니다. 상태, 감정, 비용은 해당 플랫폼에서 확인하세요. 재무 자문이 아닙니다.",
     "prod.alert": "아래 가격은 2026-10-29(Asia/Shanghai) 공개 매물에서 확인한 값입니다. 변경되거나 판매될 수 있습니다. 상태, 감정, 배송, 수수료에 따라 실제 비용이 달라집니다. 재무 자문이 아닙니다."
   },
   "es": {
@@ -483,8 +475,6 @@
     "disc.h1": "Aviso",
     "prod.table.item": "Concepto",
     "prod.table.value": "Detalle",
-    "footer.note": "Los enlaces pueden abrir sitios de tiendas. Podemos ganar una comisión cuando los programas de afiliados estén activos. Los precios cambian. Confirme estado, autenticidad y gastos en la plataforma. No es asesoramiento financiero.",
-    "footer.note.partner": "Podemos ganar una comisión si compra a través de enlaces de socios. Los precios cambian. Confirme estado, autenticidad y gastos en la plataforma. No es asesoramiento financiero.",
     "prod.alert": "Los precios se leyeron en anuncios públicos el 2026-10-29 (Asia/Shanghai). Pueden cambiar o agotarse. El estado, la autenticación, el envío y las tarifas cambian lo que paga. No es asesoramiento financiero."
   },
   "fr": {
@@ -523,8 +513,6 @@
     "disc.h1": "Mentions",
     "prod.table.item": "Élément",
     "prod.table.value": "Détail",
-    "footer.note": "Les liens peuvent ouvrir le site du revendeur. Nous pouvons toucher une commission lorsque des programmes partenaires sont actifs. Les prix changent. Vérifiez l’état, l’authenticité et les frais sur la plateforme. Ceci n’est pas un conseil financier.",
-    "footer.note.partner": "Nous pouvons toucher une commission si vous achetez via des liens partenaires. Les prix changent. Vérifiez l’état, l’authenticité et les frais sur la plateforme. Ceci n’est pas un conseil financier.",
     "prod.alert": "Prix relevés sur des annonces publiques le 2026-10-29 (Asia/Shanghai). Ils peuvent changer ou être vendus. L’état, l’authentification, la livraison et les frais modifient le coût réel. Ceci n’est pas un conseil financier."
   },
   "de": {
@@ -563,8 +551,6 @@
     "disc.h1": "Hinweis",
     "prod.table.item": "Punkt",
     "prod.table.value": "Detail",
-    "footer.note": "Links können Händlerseiten öffnen. Wenn Partnerprogramme aktiv sind, können wir eine Provision erhalten. Preise ändern sich. Zustand, Echtheit und Gebühren auf der Plattform prüfen. Keine Finanzberatung.",
-    "footer.note.partner": "Wenn Sie über Partnerlinks kaufen, können wir eine Provision erhalten. Preise ändern sich. Zustand, Echtheit und Gebühren auf der Plattform prüfen. Keine Finanzberatung.",
     "prod.alert": "Preise aus öffentlichen Angeboten vom 2026-10-29 (Asia/Shanghai). Sie können sich ändern oder verkauft sein. Zustand, Echtheit, Versand und Gebühren ändern den Preis. Keine Finanzberatung."
   },
   "it": {
@@ -603,8 +589,6 @@
     "disc.h1": "Note",
     "prod.table.item": "Voce",
     "prod.table.value": "Dettaglio",
-    "footer.note": "I link possono aprire siti dei rivenditori. Possiamo ricevere una commissione quando i programmi partner sono attivi. I prezzi cambiano. Verifica condizione, autenticità e costi sulla piattaforma. Non è una consulenza finanziaria.",
-    "footer.note.partner": "Possiamo ricevere una commissione se acquisti tramite link partner. I prezzi cambiano. Verifica condizione, autenticità e costi sulla piattaforma. Non è una consulenza finanziaria.",
     "prod.alert": "Prezzi letti da annunci pubblici il 2026-10-29 (Asia/Shanghai). Possono cambiare o esaurirsi. Condizione, autenticazione, spedizione e costi cambiano quanto paghi. Non è una consulenza finanziaria."
   },
   "pt-BR": {
@@ -643,8 +627,6 @@
     "disc.h1": "Aviso",
     "prod.table.item": "Item",
     "prod.table.value": "Detalhe",
-    "footer.note": "Os links podem abrir sites de lojas. Podemos receber comissão quando programas de afiliados estiverem ativos. Preços mudam. Confirme condição, autenticidade e taxas na plataforma. Não é aconselhamento financeiro.",
-    "footer.note.partner": "Podemos receber comissão se você comprar por links de parceiros. Preços mudam. Confirme condição, autenticidade e taxas na plataforma. Não é aconselhamento financeiro.",
     "prod.alert": "Preços lidos em anúncios públicos em 2026-10-29 (Asia/Shanghai). Podem mudar ou esgotar. Condição, autenticação, frete e taxas mudam o que você paga. Não é aconselhamento financeiro."
   },
   "ru": {
@@ -683,8 +665,6 @@
     "disc.h1": "Оговорка",
     "prod.table.item": "Пункт",
     "prod.table.value": "Детали",
-    "footer.note": "Ссылки могут открывать сайты магазинов. Когда партнёрские программы активны, мы можем получить комиссию. Цены меняются. Проверяйте состояние, подлинность и сборы на площадке. Это не финансовая рекомендация.",
-    "footer.note.partner": "Мы можем получить комиссию, если вы покупаете по партнёрским ссылкам. Цены меняются. Проверяйте состояние, подлинность и сборы на площадке. Это не финансовая рекомендация.",
     "prod.alert": "Цены сняты с публичных объявлений 2026-10-29 (Asia/Shanghai). Они могут измениться или быть проданы. Состояние, проверка, доставка и сборы меняют итоговую сумму. Это не финансовая рекомендация."
   },
   "ar": {
@@ -723,8 +703,6 @@
     "disc.h1": "إخلاء المسؤولية",
     "prod.table.item": "البند",
     "prod.table.value": "التفاصيل",
-    "footer.note": "قد تفتح الروابط مواقع المتاجر. قد نحصل على عمولة عندما تكون برامج الشركاء نشطة. الأسعار تتغير. أكّد الحالة والأصالة والرسوم على المنصة. هذا ليس نصيحة مالية.",
-    "footer.note.partner": "قد نحصل على عمولة إذا اشتريت عبر روابط الشركاء. الأسعار تتغير. أكّد الحالة والأصالة والرسوم على المنصة. هذا ليس نصيحة مالية.",
     "prod.alert": "الأسعار مأخوذة من إعلانات عامة في 2026-10-29 (Asia/Shanghai). قد تتغير أو تُباع. الحالة والتوثيق والشحن والرسوم تغيّر ما تدفعه. هذا ليس نصيحة مالية."
   },
   "hi": {
@@ -763,8 +741,6 @@
     "disc.h1": "अस्वीकरण",
     "prod.table.item": "मद",
     "prod.table.value": "विवरण",
-    "footer.note": "लिंक रिटेलर साइट खोल सकते हैं। पार्टनर प्रोग्राम सक्रिय होने पर हमें कमीशन मिल सकता है। कीमतें बदलती हैं। कंडीशन, प्रमाणिकता और शुल्क प्लेटफ़ॉर्म पर जाँचें। यह वित्तीय सलाह नहीं है।",
-    "footer.note.partner": "पार्टनर लिंक से खरीदने पर हमें कमीशन मिल सकता है। कीमतें बदलती हैं। कंडीशन, प्रमाणिकता और शुल्क प्लेटफ़ॉर्म पर जाँचें। यह वित्तीय सलाह नहीं है।",
     "prod.alert": "नीचे की कीमतें 2026-10-29 (Asia/Shanghai) की सार्वजनिक लिस्टिंग से हैं। ये बदल सकती हैं या बिक सकती हैं। कंडीशन, प्रमाणीकरण, शिपिंग और शुल्क असली लागत बदलते हैं। यह वित्तीय सलाह नहीं है।"
   },
   "th": {
@@ -803,8 +779,6 @@
     "disc.h1": "ข้อจำกัดความรับผิด",
     "prod.table.item": "รายการ",
     "prod.table.value": "รายละเอียด",
-    "footer.note": "ลิงก์อาจเปิดเว็บร้านค้า เราอาจได้ค่าคอมมิชชันเมื่อโปรแกรมพาร์ทเนอร์ใช้งานอยู่ ราคาเปลี่ยนได้ โปรดตรวจสภาพ ความแท้ และค่าธรรมเนียมบนแพลตฟอร์ม ไม่ใช่คำแนะนำทางการเงิน",
-    "footer.note.partner": "หากคุณซื้อผ่านลิงก์พาร์ทเนอร์ เราอาจได้ค่าคอมมิชชัน ราคาเปลี่ยนได้ โปรดตรวจสภาพ ความแท้ และค่าธรรมเนียมบนแพลตฟอร์ม ไม่ใช่คำแนะนำทางการเงิน",
     "prod.alert": "ราคาด้านล่างอ่านจากประกาศสาธารณะเมื่อ 2026-10-29 (Asia/Shanghai) อาจเปลี่ยนหรือขายไปแล้ว สภาพ การรับรอง ค่าส่ง และค่าธรรมเนียมเปลี่ยนจำนวนที่จ่าย ไม่ใช่คำแนะนำทางการเงิน"
   },
   "vi": {
@@ -843,8 +817,6 @@
     "disc.h1": "Tuyên bố",
     "prod.table.item": "Mục",
     "prod.table.value": "Chi tiết",
-    "footer.note": "Liên kết có thể mở trang nhà bán. Chúng tôi có thể nhận hoa hồng khi chương trình đối tác đang hoạt động. Giá thay đổi. Hãy xác nhận tình trạng, giám định và phí trên nền tảng. Không phải tư vấn tài chính.",
-    "footer.note.partner": "Chúng tôi có thể nhận hoa hồng nếu bạn mua qua liên kết đối tác. Giá thay đổi. Hãy xác nhận tình trạng, giám định và phí trên nền tảng. Không phải tư vấn tài chính.",
     "prod.alert": "Giá bên dưới được đọc từ tin đăng công khai ngày 2026-10-29 (Asia/Shanghai). Có thể đổi hoặc đã bán. Tình trạng, giám định, vận chuyển và phí làm thay đổi số tiền phải trả. Không phải tư vấn tài chính."
   },
   "id": {
@@ -883,8 +855,6 @@
     "disc.h1": "Penafian",
     "prod.table.item": "Butir",
     "prod.table.value": "Detail",
-    "footer.note": "Tautan dapat membuka situs peritel. Kami dapat menerima komisi saat program mitra aktif. Harga berubah. Konfirmasi kondisi, keaslian, dan biaya di platform. Bukan nasihat keuangan.",
-    "footer.note.partner": "Kami dapat menerima komisi jika Anda membeli lewat tautan mitra. Harga berubah. Konfirmasi kondisi, keaslian, dan biaya di platform. Bukan nasihat keuangan.",
     "prod.alert": "Harga di bawah dibaca dari listing publik pada 2026-10-29 (Asia/Shanghai). Bisa berubah atau sudah terjual. Kondisi, autentikasi, ongkir, dan biaya mengubah yang Anda bayar. Bukan nasihat keuangan."
   },
   "tr": {
@@ -923,8 +893,6 @@
     "disc.h1": "Sorumluluk",
     "prod.table.item": "Kalem",
     "prod.table.value": "Ayrıntı",
-    "footer.note": "Bağlantılar satıcı sitelerini açabilir. Ortak programlar aktifken komisyon kazanabiliriz. Fiyatlar değişir. Kondisyon, özgünlük ve ücretleri platformda doğrulayın. Finansal tavsiye değildir.",
-    "footer.note.partner": "Ortak bağlantılardan satın alırsanız komisyon kazanabiliriz. Fiyatlar değişir. Kondisyon, özgünlük ve ücretleri platformda doğrulayın. Finansal tavsiye değildir.",
     "prod.alert": "Aşağıdaki fiyatlar 2026-10-29 (Asia/Shanghai) tarihli herkese açık ilanlardan okundu. Değişebilir veya satılmış olabilir. Kondisyon, doğrulama, kargo ve ücretler ödemeyi değiştirir. Finansal tavsiye değildir."
   },
   "nl": {
@@ -963,8 +931,6 @@
     "disc.h1": "Disclaimer",
     "prod.table.item": "Item",
     "prod.table.value": "Detail",
-    "footer.note": "Links kunnen retailersites openen. Als partnerprogramma’s actief zijn, kunnen we een commissie ontvangen. Prijzen wijzigen. Controleer staat, echtheid en kosten op het platform. Geen financieel advies.",
-    "footer.note.partner": "Als u via partnerlinks koopt, kunnen we een commissie ontvangen. Prijzen wijzigen. Controleer staat, echtheid en kosten op het platform. Geen financieel advies.",
     "prod.alert": "Prijzen gelezen uit openbare aanbiedingen op 2026-10-29 (Asia/Shanghai). Ze kunnen wijzigen of verkocht zijn. Staat, echtheid, verzending en kosten veranderen wat u betaalt. Geen financieel advies."
   },
   "pl": {
@@ -1003,8 +969,6 @@
     "disc.h1": "Zastrzeżenie",
     "prod.table.item": "Pozycja",
     "prod.table.value": "Szczegół",
-    "footer.note": "Linki mogą otwierać strony sprzedawców. Gdy programy partnerskie są aktywne, możemy otrzymać prowizję. Ceny się zmieniają. Potwierdź stan, autentyczność i opłaty na platformie. To nie jest porada finansowa.",
-    "footer.note.partner": "Możemy otrzymać prowizję, gdy kupisz przez linki partnerskie. Ceny się zmieniają. Potwierdź stan, autentyczność i opłaty na platformie. To nie jest porada finansowa.",
     "prod.alert": "Ceny odczytane z publicznych ogłoszeń 2026-10-29 (Asia/Shanghai). Mogą się zmienić lub zostać sprzedane. Stan, autentyczność, wysyłka i opłaty zmieniają kwotę. To nie jest porada finansowa."
   }
 };

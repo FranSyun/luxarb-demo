@@ -41,4 +41,4 @@ python3 -m http.server 8080
 
 ## Footer disclosure
 
-Until a tagged partner URL is set, the footer says links may open retailer sites, and LuxArb may earn a commission when partner programs are active. After any `taggedUrl` is a real https link, the footer switches to: we may earn a commission when you buy through partner links.
+Every page shows this fixed line: “Affiliate disclosure: We may earn a commission if you buy through links on this site, at no extra cost to you. Prices and availability can change on retailer sites.”
